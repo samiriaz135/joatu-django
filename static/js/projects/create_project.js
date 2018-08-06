@@ -527,9 +527,9 @@ $(document).ready(function () {
             if (minutesEnd === 0) {    //add another 0 if minutes = 0
                 minutesEnd = '00';
             }
-            var start_time_conv = start.getHours() + 'H' + minutesStart; //format hours
+            var start_time_conv = start.getHours() + ':' + minutesStart; //format hours
             $('#time_start_template').text(start_time_conv);//show hours
-            var end_time_conv = end.getHours() + 'H' + minutesEnd; //format hours
+            var end_time_conv = end.getHours() + ':' + minutesEnd; //format hours
             $('#time_end_template').text(end_time_conv);//show hours
             var address = $('#inputNumber').val() + ' ' + $('#inputStreet').val() + ', ' + $('#inputZip').val(); // format address
             $('#project_address').text(address); //show project address
